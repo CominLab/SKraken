@@ -1,3 +1,32 @@
+ SKraken: Fast and Sensitive Classification of Short Metagenomic Reads based on filtering uninformative k-mers
+
+The study of microbial communities is an emerging field that is revolutionizing many disciplines from ecology to medicine. The major problem when analyzing a metagenomic sample is to taxonomic annotate its reads in order to identify the \begin{flushright} \end{flushright} species in the sample and their relative abundance. Many tools have been developed in the recent years, however the performance in terms of precision and speed are not always adequate for these very large datasets. In this work we present SKraken an efficient approach to accurately classify metagenomic reads against a set of reference genomes, e.g. the NCBI/RefSeq database. SKraken is based on $k$-mers statistics combined with the taxonomic tree. Given a set of target genomes
+SKraken is able to detect the most representative $k$-mers for each species, filtering out uninformative $k$-mers. The classification performance on several synthetic and real metagenomics datasets shows that SKraken achieves in most cases the best performances in terms of precision and recall w.r.t. Kraken. In particular, at species level classification, the estimation of the abundance ratios improves by 6\% and the precision by $8\%$. This behavior is confirmed also on a real stool metagenomic sample where SKraken is able to detect species with high precision. Because of the efficient filtering of uninformative $k$-mers, SKraken requires less RAM than Kraken.
+
+Licence
+
+The software is freely available for academic use.
+
+For questions about the tool, please contact Matteo Comin.
+
+Reference
+
+Please cite the following paper:
+
+J. Qian, D. Marchiori, M. Comin
+"Fast and Sensitive Classification of Short Metagenomic Reads with SKraken"
+Communications in Computer and Information Science 2018, vol 881, pp. 212-226.
+
+D. Marchiori, M. Comin
+"SKraken: Fast and Sensitive Classification of Short Metagenomic Reads based on Filtering Uninformative k-mers".
+In Proceedings of the 10th International Conference on Bioinformatics Models, Methods and Algorithms (Bioinformatics 2017), pp. 59-67.
+
+
+
+
+--------------------------
+
+
 # **SKRAKEN** #
 
 # **Installation** #
